@@ -28,8 +28,8 @@
   const jf = document.getElementById("joinForm");
   if (jf) {
     const msg = document.getElementById("joinMsg");
-    jf.addEventListener("submit", (ev) => {
-      ev.preventDefault();
+    const send = (ev) => {
+      if (ev) ev.preventDefault();
       const name = jf.querySelector('[name="name"]').value.trim();
       const email = jf.querySelector('[name="email"]').value.trim();
       if (!name || !email) return;
@@ -55,7 +55,10 @@
           try { localStorage.setItem(MEMBER_KEY, JSON.stringify({ name: name, email: email, t: Date.now() })); } catch (e) {}
           msg.textContent = "網絡不穩，已在本機解鎖。";
         });
-    });
+    };
+    jf.addEventListener("submit", send);
+    const btn = document.getElementById("joinBtn");
+    if (btn) btn.addEventListener("click", send);
   }
 /* 十四時四十四分 — reader behaviour, no dependencies */
 (function () {
