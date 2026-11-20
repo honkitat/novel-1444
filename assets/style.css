@@ -98,16 +98,23 @@ h3{font-size:1.15rem;line-height:1.5}
 .cover .kicker{font-family:var(--sans);font-size:12px;letter-spacing:.3em;color:var(--accent);margin-bottom:1.6rem}
 .cover h1{letter-spacing:.06em}
 .cover .sub{margin:1.3rem 0 0;font-size:1.06em;line-height:1.85;color:var(--ink-2);max-width:22em}
-.cta{display:flex;gap:1.6rem;margin:2.3rem 0 0;flex-wrap:wrap;align-items:baseline}
+.lede-1{max-width:26em;margin:1.6rem 0 0;color:var(--ink-2);font-size:1.02em;line-height:1.95}
+.cta{display:flex;gap:1.8rem;margin:2.2rem 0 0;flex-wrap:wrap;align-items:baseline;font-family:var(--sans)}
+.cta a.primary{font-size:14px;letter-spacing:.1em;padding-bottom:.4rem;border-bottom:2px solid var(--accent);color:var(--ink)}
+.cta a.primary:hover{color:var(--accent)}
+.cta a.secondary{font-size:13px;letter-spacing:.04em;color:var(--ink-3)}
+.cta a.secondary:hover{color:var(--ink-2)}
+.dot{display:inline-block;width:5px;height:5px;background:var(--accent);border-radius:50%;margin:0 .45rem;vertical-align:2px}
 .plate{border-left:1px solid var(--rule);padding-left:1.7rem;align-self:stretch;
   display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:.4rem}
 .plate .t{font-size:15px;letter-spacing:.3em;writing-mode:vertical-rl;align-self:flex-end;
   color:var(--ink-3);font-family:var(--sans)}
 .plate .n{font-family:var(--sans);font-size:10.5px;letter-spacing:.18em;color:var(--ink-3);margin-top:1.1rem}
-.stamp{margin-top:2.6rem;padding-top:1.1rem;border-top:1px solid var(--rule-2);
-  display:grid;grid-template-columns:repeat(3,auto);gap:.4rem 2.2rem;
-  font-family:var(--sans);font-size:11.5px;line-height:1.95;color:var(--ink-3)}
-.stamp b{display:block;font-size:10px;letter-spacing:.2em;color:var(--ink-3);font-weight:500}
+.stamp{margin-top:2.6rem;padding-top:1.2rem;border-top:1px solid var(--rule-2);
+  display:grid;grid-template-columns:repeat(3,auto);gap:1.1rem 2.6rem;
+  font-family:var(--sans);font-size:12px;line-height:1.85;color:var(--ink-2)}
+.stamp div{max-width:15em}
+.stamp b{display:block;font-size:9.5px;letter-spacing:.22em;color:var(--ink-3);font-weight:500;margin-bottom:.3rem}
 .live{display:inline-block;margin-left:.5rem;padding:1px 7px;border:1px solid var(--accent);
   color:var(--accent);font-size:10px;letter-spacing:.12em;border-radius:1px;vertical-align:1px}
 @media(max-width:860px){
