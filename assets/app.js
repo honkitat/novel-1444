@@ -34,7 +34,7 @@
       const email = jf.querySelector('[name="email"]').value.trim();
       if (!name || !email) return;
       msg.textContent = "正在送出…";
-      fetch("https://formsubmit.co/ajax/honkitat@gmail.com", {
+      fetch("https://formsubmit.co/ajax/361723j@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({
