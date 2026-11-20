@@ -219,6 +219,24 @@ h3{font-size:1.15rem;line-height:1.5}
 .narrow p{text-indent:0;margin:0 0 1em;color:var(--ink-2)}
 .narrow h3{margin:2.2rem 0 .6rem}
 
+/* ---------- law ---------- */
+.lawlist{margin-top:1.4rem}
+.lawsec{border-top:1px solid var(--rule-2);padding:2.2rem 0;display:grid;
+  grid-template-columns:3.2rem 1fr;gap:0 1.4rem}
+.lawsec .ln{font-family:var(--sans);font-size:12px;letter-spacing:.14em;color:var(--accent);padding-top:.35rem}
+.lawsec h3{grid-column:2;font-size:1.3rem;margin-bottom:.5rem}
+.lawsec > p, .lawsec .lawcase, .lawsec .lawsrc{grid-column:2}
+.lawlead{color:var(--ink);font-size:1.02em;margin:0 0 1rem;max-width:34em}
+.lawsec p{color:var(--ink-2);margin:0 0 .9em;max-width:36em;font-size:.98em;line-height:1.95}
+.lawcase{border-left:2px solid var(--accent);padding:.2rem 0 .2rem 1rem;margin:1.2rem 0 .8rem;
+  color:var(--ink);font-size:.96em;max-width:34em}
+.lawcase b{display:block;font-family:var(--sans);font-size:10px;letter-spacing:.2em;
+  color:var(--accent);margin-bottom:.4rem;font-weight:500}
+.lawsrc{font-family:var(--sans);font-size:11.5px;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
+.lawsrc a{color:var(--ink-3);border-bottom:1px solid var(--rule)}
+.lawsrc a:hover{color:var(--accent);border-color:var(--accent)}
+@media(max-width:620px){.lawsec{grid-template-columns:2.2rem 1fr;gap:0 .8rem}}
+
 /* ---------- daily log ---------- */
 .loglist{margin-top:1.8rem}
 .logitem{border-top:1px solid var(--rule-2);padding:2rem 0}
