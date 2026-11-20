@@ -57,9 +57,9 @@
   });
 
   // ---- view counter (aggregate only, no cookies, no identity) ----
-  const slug = document.body.dataset.slug || "home";
-  const key = "choi1444/" + slug;
-  const seenKey = "ctf-seen-" + slug;
+  const pg = document.body.dataset.slug || "home";
+  const key = "choi1444/" + pg;
+  const seenKey = "ctf-seen-" + pg;
   const box = document.getElementById("hits");
   if (box) {
     const paint = (n) => {
