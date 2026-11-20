@@ -255,6 +255,17 @@ h3{font-size:1.15rem;line-height:1.5}
 .th p{margin:.45rem 0 0;color:var(--ink-2);font-size:.94em}
 @media(max-width:700px){.ftable td.c5{display:none}.ftable th:nth-child(5){display:none}}
 
+/* ---------- sources ---------- */
+.srcgroups{margin-top:1rem;border-top:1px solid var(--rule-2)}
+.srcgrp{border-bottom:1px solid var(--rule-2);padding:.9rem 0}
+.srcgrp summary{cursor:pointer;font-size:.98em;color:var(--ink);display:flex;gap:.8rem;align-items:baseline;flex-wrap:wrap}
+.srcgrp summary b{font-weight:600}
+.srcgrp summary .meta{font-size:11px}
+.srcgrp ul{list-style:none;padding:.6rem 0 0 1rem;margin:0;font-family:var(--sans);font-size:11px;line-height:1.9}
+.srcgrp li{word-break:break-all}
+.srcgrp a{color:var(--ink-3);border-bottom:1px solid var(--rule-2)}
+.srcgrp a:hover{color:var(--accent);border-color:var(--accent)}
+
 /* ---------- gate + join ---------- */
 .gate{border:1px solid var(--rule);background:var(--paper-2);padding:2.6rem 2rem;margin:0 auto 3rem;
   max-width:var(--measure);text-align:center}
