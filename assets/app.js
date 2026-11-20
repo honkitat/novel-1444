@@ -55,4 +55,27 @@
     if ((e.key === "ArrowRight" || e.key === "j") && next) location.href = next.href;
     if ((e.key === "ArrowLeft" || e.key === "k") && prev) location.href = prev.href;
   });
+
+  // ---- view counter (aggregate only, no cookies, no identity) ----
+  const slug = document.body.dataset.slug || "home";
+  const key = "choi1444/" + slug;
+  const seenKey = "ctf-seen-" + slug;
+  const box = document.getElementById("hits");
+  if (box) {
+    const paint = (n) => {
+      box.textContent = n ? "本章閱覽 " + n.toLocaleString("en-HK") + " 次" : "";
+    };
+    if (!sessionStorage.getItem(seenKey)) {
+      sessionStorage.setItem(seenKey, "1");
+      fetch("https://abacus.jasoncameron.dev/hit/" + key)
+        .then((r) => r.json())
+        .then((d) => paint(d.value))
+        .catch(() => {});
+    } else {
+      fetch("https://abacus.jasoncameron.dev/get/" + key)
+        .then((r) => r.json())
+        .then((d) => paint(d.value))
+        .catch(() => {});
+    }
+  }
 })();
