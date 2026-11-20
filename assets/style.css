@@ -219,6 +219,42 @@ h3{font-size:1.15rem;line-height:1.5}
 .narrow p{text-indent:0;margin:0 0 1em;color:var(--ink-2)}
 .narrow h3{margin:2.2rem 0 .6rem}
 
+/* ---------- facts database ---------- */
+.filters{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap;margin:1.6rem 0 1rem}
+#fq{flex:1;min-width:14em;background:transparent;border:0;border-bottom:1px solid var(--rule);
+  color:var(--ink);font-family:var(--serif);font-size:1rem;padding:.5rem 0;outline:none}
+#fq:focus{border-color:var(--accent)}
+.chips{display:flex;gap:.4rem;flex-wrap:wrap}
+.chip{font-family:var(--sans);font-size:11.5px;letter-spacing:.06em;color:var(--ink-3);
+  background:none;border:1px solid var(--rule);padding:.32rem .7rem;cursor:pointer;border-radius:1px}
+.chip.on{color:var(--paper);background:var(--accent);border-color:var(--accent)}
+.ftable-wrap{overflow-x:auto}
+.ftable{width:100%;border-collapse:collapse;font-size:.92em;line-height:1.75}
+.ftable th{font-family:var(--sans);font-size:10.5px;letter-spacing:.16em;color:var(--ink-3);
+  text-align:left;font-weight:500;padding:0 .8rem .6rem 0;border-bottom:1px solid var(--rule)}
+.ftable td{padding:.85rem .8rem .85rem 0;border-bottom:1px solid var(--rule-2);vertical-align:top;color:var(--ink-2)}
+.ftable td.c1{white-space:nowrap;color:var(--ink-3);font-family:var(--sans);font-size:11.5px}
+.ftable td.c2{white-space:nowrap;color:var(--ink);font-weight:500}
+.ftable td.c4{white-space:nowrap}
+.ftable td.c5{font-family:var(--sans);font-size:11px}
+.ftable td.c5 a{color:var(--ink-3);border-bottom:1px solid var(--rule)}
+.ftable td.c5 a:hover{color:var(--accent)}
+.docs{list-style:none;padding:0;margin:1rem 0 0;font-size:.95em;line-height:1.9;color:var(--ink-2)}
+.docs li{padding:1rem 0;border-bottom:1px solid var(--rule-2)}
+.docs a{color:var(--ink-3);font-size:11.5px;font-family:var(--sans);word-break:break-all}
+.nums{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:1rem;margin-top:1rem}
+.num{border:1px solid var(--rule);padding:1rem 1.1rem}
+.num .k{font-family:var(--sans);font-size:10.5px;letter-spacing:.16em;color:var(--ink-3)}
+.num .v{font-size:1.15rem;color:var(--accent);margin:.4rem 0;font-weight:600}
+.num .n{font-size:.85em;color:var(--ink-3);line-height:1.7}
+.theories{margin-top:1rem}
+.th{border-top:1px solid var(--rule-2);padding:1.1rem 0}
+.th .tt{font-size:1.02rem;color:var(--ink)}
+.th .verdict{font-family:var(--sans);font-size:10.5px;letter-spacing:.1em;color:var(--accent);
+  border:1px solid var(--rule);padding:.1rem .5rem;margin-left:.5rem}
+.th p{margin:.45rem 0 0;color:var(--ink-2);font-size:.94em}
+@media(max-width:700px){.ftable td.c5{display:none}.ftable th:nth-child(5){display:none}}
+
 /* ---------- gate + join ---------- */
 .gate{border:1px solid var(--rule);background:var(--paper-2);padding:2.6rem 2rem;margin:0 auto 3rem;
   max-width:var(--measure);text-align:center}
